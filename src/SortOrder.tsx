@@ -15,5 +15,3 @@ export const SortOrders = (
     }
   });
 }
-
-export const Buttons = [0, 1, 2, 3, 4, 5];
