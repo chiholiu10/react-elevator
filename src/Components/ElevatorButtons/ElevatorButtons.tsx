@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { NoData } from "../Elevator/Elevator.styles";
 import { ElevatorButton } from "./ElevatorButtons.styles";
 
 interface ElevatorBtnProps {
@@ -14,6 +15,9 @@ export const ElevatorButtons: FC<ElevatorBtnProps> = ({
   currentFloor, 
   clickButton 
 }) => {
+  if(floorNumbers === undefined || floorNumbers.length === 0) return (
+  <NoData>No Floor numbers found</NoData>)
+
   const allButtons = floorNumbers.map((button, index) => (
     <ElevatorButton 
       key={index} 
