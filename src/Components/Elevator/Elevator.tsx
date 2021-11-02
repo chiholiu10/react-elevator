@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import { SortOrders } from "../../SortOrder";
+import { SortOrders } from "../SortOrder/SortOrder";
 import { ElevatorButtons } from "../ElevatorButtons/ElevatorButtons";
 import { ElevatorFloor } from "../ElevatorFloor/ElevatorFloor";
 

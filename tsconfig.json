@@ -21,7 +21,8 @@
       "node",
       "jest",
       "@testing-library/jest-dom"
-    ]
+    ],
+    "module": "esnext"
   },
   "include": [
     "/src/**/*.ts",
