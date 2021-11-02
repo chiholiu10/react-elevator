@@ -8,7 +8,12 @@ interface ElevatorBtnProps {
   clickButton: Function;
 }
 
-export const ElevatorButtons: FC<ElevatorBtnProps> = ({ orders, floorNumbers, currentFloor, clickButton }) => {
+export const ElevatorButtons: FC<ElevatorBtnProps> = ({ 
+  orders, 
+  floorNumbers, 
+  currentFloor, 
+  clickButton 
+}) => {
   const allButtons = floorNumbers.map((button, index) => (
     <ElevatorButton 
       key={index} 
